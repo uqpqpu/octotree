@@ -260,6 +260,14 @@ class Adapter {
   }
 
   /**
+   * Opens file or submodule in a new tab.
+   * @api public
+   */
+  openInNewTab(path) {
+    window.open(path, '_blank').focus()
+  }
+
+  /**
    * Downloads a file.
    * @api public
    */
